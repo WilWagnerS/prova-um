@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @CrossOrigin
 public class imparparController {
 
-    @GetMapping("/ValidarNumero")
+    @GetMapping("/validarNumero")
     public ResponseEntity<imparparResponseDTO> ValidarNumero (@RequestParam Double numero1) {
 
         imparparResponseDTO resultado = new imparparResponseDTO();
