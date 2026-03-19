@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class imparparController {
 
     @GetMapping("/validarNumero")
-    public ResponseEntity<imparparResponseDTO> validarNumero (@RequestParam Double numero1) {
+    public ResponseEntity<imparparResponseDTO> validarNumero (@RequestParam Double numero) {
 
         imparparResponseDTO resultado = new imparparResponseDTO();
-        resultado.setRestoDivisao(numero1/2);
+        resultado.setRestoDivisao(numero % 2);
 
         if (resultado.getRestoDivisao() == 0) {
             resultado.setImparPar("Par");
