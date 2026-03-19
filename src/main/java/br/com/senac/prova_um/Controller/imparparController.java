@@ -17,9 +17,9 @@ public class imparparController {
     public ResponseEntity<imparparResponseDTO> ValidarNumero (@RequestParam Double numero1) {
 
         imparparResponseDTO resultado = new imparparResponseDTO();
-        resultado.setResto(numero1/2);
+        resultado.setRestoDivisao(numero1/2);
 
-        if (resultado.getResto() == 0) {
+        if (resultado.getRestoDivisao() == 0) {
             resultado.setImparPar("Par");
 
         }else{

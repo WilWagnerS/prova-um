@@ -3,7 +3,7 @@ package br.com.senac.prova_um.dtos;
 public class imparparResponseDTO {
 
     String imparPar;
-    double resto;
+    double restoDivisao;
 
     public String getImparPar() {
         return imparPar;
@@ -13,11 +13,11 @@ public class imparparResponseDTO {
         this.imparPar = imparPar;
     }
 
-    public double getResto() {
-        return resto;
+    public double getRestoDivisao() {
+        return restoDivisao;
     }
 
-    public void setResto(double resto) {
-        this.resto = resto;
+    public void setRestoDivisao(double restoDivisao) {
+        this.restoDivisao = restoDivisao;
     }
 }
