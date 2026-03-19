@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class imparparController {
 
     @GetMapping("/validarNumero")
-    public ResponseEntity<imparparResponseDTO> ValidarNumero (@RequestParam Double numero1) {
+    public ResponseEntity<imparparResponseDTO> validarNumero (@RequestParam Double numero1) {
 
         imparparResponseDTO resultado = new imparparResponseDTO();
         resultado.setRestoDivisao(numero1/2);
